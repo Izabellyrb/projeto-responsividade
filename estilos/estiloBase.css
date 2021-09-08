@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box; 
+    justify-content: center;
+    align-items: center;  
+}
+
+body {
+    background: #eecdf5;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height: 100vh;  
+}
+
+
+header {
+    background-color: #621172;
+    color: #ffffff;
+    width: 100%;
+}
+
+footer{
+    font-size: 10pt;
+    font-family: calibri, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: #621172;
+
+}
+
+.menu, .menu ul {
+    text-align:right;
+    font-size: 12pt;
+    list-style: none;
+}
+.menu li {
+    display:inline-flex;
+    padding: 2%;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #b1b1b196;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/*menu toggle fullscreen*/
+.menuSection.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #621172;
+    z-index: 10; 
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuSection.on nav {
+    display: block;
+}
+
+.menuSection.on .menuToggle { /*3 - ativados aparecem no fullscreen*/
+    position: absolute;  
+    right: 15px;
+    top: 50px;
+}
+
+.menuSection.on .menuToggle .um {  /*3 - no fullscreen viram um X*/
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menuSection.on .menuToggle .dois {  /*3 - no fullscreen viram um X*/
+    opacity: 0;
+}
+
+.menuSection.on .menuToggle .tres {  /*3 - no fullscreen viram um X*/
+    transform: rotate(-45deg) translate(10px, -10px);
+}
+
+.menuSection.on nav li {
+    display: block;
+    text-align: center;   
+}
+
+.menuSection.on nav ul a {
+    transition-duration: 0.5s;
+    font-size: 130%;
+    line-height: 3rem;
+    display: block;
+}

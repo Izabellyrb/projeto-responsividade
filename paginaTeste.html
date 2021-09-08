@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link type="text/css" href="estilos/estiloBase.css" rel="stylesheet">
+    <title>Pagina Teste</title>
+    <style>
+    
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            background-image:radial-gradient(#a223ad, #450247);
+            background-attachment: fixed;
+        }   
+
+        section {
+            font-size: 20pt;
+            color: #ffffff;
+        }
+
+        .voltar {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: rgba(19, 3, 22, 0.6);
+            border-radius: 6px;
+            border: none;
+            padding: 10%;
+            cursor: pointer;
+        }
+
+        @media (max-width: 425px){
+        body, section {
+        font-size: 100%;
+        }
+
+        .voltar {
+            font-size: 70%;
+            justify-items: center;
+
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <section class="grid">
+        Pagina teste. O link deu certo :) 
+    </section>
+    <br>
+    <a href="home.html">
+        <button class="voltar">VOLTAR</button>
+    </a>
+</body>
+</html>

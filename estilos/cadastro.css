@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+.nome {
+    padding: 1% 2%;
+    padding-bottom: 0%;
+    font-size: 60pt;
+}
+
+/*Formulário*/
+
+h2 { /*Cadastre-se...*/
+    text-align: center;
+    font-size: 2rem;
+}
+
+.fcadastro {
+    border: 1px solid #62117242;
+    box-shadow: 1px 1px 3px #000000;
+    margin: 1% 15%;
+}
+
+.info, .dprincipais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 5px;
+}
+p {
+    margin: 3% 1%;
+    font-weight: bold;
+}
+
+input, select, option {
+    padding: 5px;
+    background-color: #b1b1b196;
+    border: none;
+    
+}
+
+button {
+    margin: 1%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(19, 3, 22, 0.6);
+    border-radius:6px; 
+    color: #ffffff;
+    cursor: pointer; 
+    font-size: 10pt;
+    border: none;
+} 
+
+.voltar {
+    margin: 1%;
+    padding: 5px 10px 5px 10px;
+    font-family: Arial, sans-serif;
+    background-color: rgba(19, 3, 22, 0.6);
+    border-radius:6px; 
+    color: #ffffff;
+    font-size: 10pt;
+    text-decoration: none;
+} 
+
+button:hover, .voltar:hover {
+    background-color:#140118
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*media queries*/
+
+@media (max-width:768px) {
+    .nome {
+        font-size:4rem;
+    }
+
+    .fcadastro, .info, .dprincipais  {
+        flex-direction: column;
+        align-items:center;
+        text-align:justify;
+    }
+
+    input, select, option {
+        padding: 5px;
+        background-color: #b1b1b196;
+        border: none;
+        width: auto;
+    }
+
+    .botoes {
+        font-size: 80%;
+        padding: 1% 1%;
+    }
+}
+
+@media (max-width: 538px){
+    body, footer {
+        font-size: 90%;
+    }
+    .nome {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .fEmail, .fNome {
+        width: 15rem;
+    }
+
+    .fcadastro, .info, .dprincipais  {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .botoes {
+        font-size: 70%;
+        padding: 1% 1%;
+    }
+}
+
+@media (max-width: 425px){
+    body, .menu, footer{
+        font-size: 80%;
+    }
+    .nome {
+        font-size: 2rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .fEmail, .fNome {
+        width: 12rem;
+    }
+
+    .botoes {
+        font-size: 80%;
+        padding: 1% 1%;
+    }
+    
+    .um, .dois, .tres {
+        background-color: #ffffff;
+        height: 6px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menuToggle {
+        width: 40px;
+        height: 40px;
+        margin-left: 87%; 
+        margin-top: -40px;
+    }
+}

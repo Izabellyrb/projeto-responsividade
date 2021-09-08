@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link type="text/css" href="estilos/cadastro.css" rel="stylesheet"/>
+    <link type="text/css" href="estilos/estiloBase.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <h1 class="nome">SITE RESPONSIVO</h1>
+        <div class="menuSection"> <!--Section de menu toogle ativado-->
+            <div class="menuToggle">
+                <div class="um"></div>
+                <div class="dois"></div>
+                <div class="tres"></div>
+            </div>
+            <nav class ="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="paginaTeste.html">Item 1</a></li>
+                    <li><a href="paginaTeste.html">Item 2</a></li>
+                    <li><a href="paginaTeste.html">Item 3</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2> Cadastre-se em nosso site!</h2>
+
+    <form class="fcadastro" method="post" action="mailto:izaahrb@gmail.com" oninput="">  <!--para envio do form para um banco de dados-->            
+        <div class="dprincipais">
+            <p>Nome: <input type="text" class="fNome" name="nome" size="40" placeholder="Insira o nome completo" autofocus="autofocus" required></p>
+            <p class="sexo">Sexo: <input type="radio" name="sexo" id="sexof"> <label for="sexof"> Feminino</label>
+             <input type="radio" name="sexo" id="sexom"> <label for="sexom"> Masculino </label> 
+             <input type="radio" name="sexo" id="sexoi"> <label for="sexoi"> Não informar </label> </p>
+            <p>Data de Nascimento: <input type="date" class="fNasc" name="nasc"> </p>
+            <p>Telefone: <input type="number" class="fTel" name="tel" placeholder="Insira um telefone com DDD" maxlength="12"></p>
+
+            <p><label for="estado"> Estado: </label>
+                <select id="estado">
+                    <option value="AC">Insira o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select></p>
+
+            <p>Cidade <input type="text" name="Cidade" size="20" placeholder= "Insira sua cidade" required></p>
+            <p>CEP <input type="text" name="CEP" size="20" placeholder= "Insira sua cidade" required></p>
+            <p>E-mail: <input type="email"  class="fEmail" name="email" size="40" placeholder= "Insira um email válido" required></p>
+            <p>Senha: <input type="password" name="senha" size="15" placeholder= "Insira uma senha" required></p>
+            <p>Repita a senha: <input type="password" name="rsenha" size="15" placeholder= "Repita a senha" required> </p>
+            </div>
+            
+            <div class="botoes">
+                <button type="submit"> Enviar informações </button>
+                <a class="voltar" href="home.html">Voltar</a>
+                <button type="reset" value="Limpar">Limpar</button>
+                
+            </div>
+    </form>
+    <br>
+    <footer> Pagina teste - todos os direitos reservados à mim :) </footer>
+
+    <script src="/estilos/scripts.js"> </script> 
+    
+</body>
+</html>
