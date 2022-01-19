@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-
-.nome {
-    padding: 1% 2%;
-    padding-bottom: 0%;
-    font-size: 60pt;
-}
-
 .cubos {
     width: 100%;
     max-height: 300px;
@@ -38,46 +31,22 @@
 
 /*media queries*/
 
+/* Laptops */
 @media (max-width:768px) {
-    .nome {
-        font-size: 4rem;
-    }
-
     .news {
         flex-direction: column;
     }
-
     .bsaibaMais {
         font-size: 80%;
         padding: 1% 1%;
     }
-
 }
 
-@media (max-width: 425px){
-    body, .menu, footer{
-        font-size: 80%;
-    }
-    .nome {
-        font-size: 2rem;
-    }
+/* celulares menores */
+@media (max-width: 480px){
 
-    .menu {
-        display: none;
-    }
-
-    .um, .dois, .tres {
-        background-color: #ffffff;
-        height: 6px;
-        width: 100%;
-        margin: 6px auto;
-        transition-duration: 0.3s;
-    }
-
-    .menuToggle {
-        width: 40px;
-        height: 40px;
-        margin-left: 87%; 
-        margin-top: -40px;
+    .bsaibaMais {
+        font-size: 90%;
+        padding: 1.5% 1.5%;
     }
 }

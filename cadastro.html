@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link type="text/css" href="estilos/cadastro.css" rel="stylesheet"/>
@@ -40,7 +41,7 @@
              <input type="radio" name="sexo" id="sexom"> <label for="sexom"> Masculino </label> 
              <input type="radio" name="sexo" id="sexoi"> <label for="sexoi"> Não informar </label> </p>
             <p>Data de Nascimento: <input type="date" class="fNasc" name="nasc"> </p>
-            <p>Telefone: <input type="number" class="fTel" name="tel" placeholder="Insira um telefone com DDD" maxlength="12"></p>
+            <p>Telefone: <input type="number" class="fTel" name="tel" placeholder="Telefone + DDD" maxlength="12"></p>
 
             <p><label for="estado"> Estado: </label>
                 <select id="estado">
@@ -79,16 +80,15 @@
             <p>E-mail: <input type="email"  class="fEmail" name="email" size="40" placeholder= "Insira um email válido" required></p>
             <p>Senha: <input type="password" name="senha" size="15" placeholder= "Insira uma senha" required></p>
             <p>Repita a senha: <input type="password" name="rsenha" size="15" placeholder= "Repita a senha" required> </p>
-            </div>
+        </div>
             
-            <div class="botoes">
-                <button type="submit"> Enviar informações </button>
-                <a class="voltar" href="home.html">Voltar</a>
-                <button type="reset" value="Limpar">Limpar</button>
-                
-            </div>
+        <div class="botoes">
+            <button type="submit"> Enviar informações </button>
+            <a class="voltar" href="home.html">Voltar</a>
+            <button type="reset" value="Limpar">Limpar</button>
+        </div>
     </form>
-    <br>
+
     <footer> Pagina teste - todos os direitos reservados à mim :) </footer>
 
     <script src="/estilos/scripts.js"> </script> 

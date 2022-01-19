@@ -1,4 +1,4 @@
-// MENU RESPONSIVO -- FAZER FUNCIONAR EM TODAS AS PAGINAS
+// MENU RESPONSIVO
 let show = true;
                 
 const menuSection = document.querySelector(".menuSection")

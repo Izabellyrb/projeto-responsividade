@@ -5,6 +5,26 @@ body {
     height: 100vh; 
 }
 
+.bgum {
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgba(77, 11, 94, 0.116);
+    top: -170px;
+    right: -60px;
+    width: 40rem;
+    height: 40rem;
+
+}
+.bgdois{
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgba(77, 11, 94, 0.116);
+    left: -60px;
+    bottom:-100px;
+    width: 30rem;
+    height: 30rem;
+}
+
 .login {
     display: flex;
     width: 320px;
@@ -12,13 +32,14 @@ body {
     background-color: #530463;
     color: #ffffff;
     border-radius: 6px;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.4);
-    font-size: 20pt;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.4);
+    font-size: 18pt;
     z-index: 1;
 }
 
 .femail, .fsenha {
     width: 15rem;
+    font-size: 12pt;
 }
 
 .botao {
@@ -26,7 +47,7 @@ body {
     border-radius:6px; 
     color: #cecece;
     padding: 5% 40% 5% 40%;
-    font-size: 12pt;
+    font-size: 14pt;
     text-decoration: none;
     font-family: arial;
 } 
@@ -36,7 +57,7 @@ body {
 }
 
 .slogin {
-    font-size: 11pt;
+    font-size: 12pt;
     color:#ffffff;
 }
 
@@ -44,32 +65,34 @@ body {
     color:#eecdf5;
 }
 
-.bgum {
-    position: fixed;
-    border-radius: 50%;
-    background-color: rgba(77, 11, 94, 0.116);
-    top: -100px;
-    right: -50px;
-    width: 30rem;
-    height: 30rem;
 
-}
-.bgdois{
-    position: fixed;
-    border-radius: 50%;
-    background-color: rgba(77, 11, 94, 0.116);
-    left: -60px;
-    bottom:-20px;
-    width: 20rem;
-    height: 20rem;
-}
 
 /*media queries*/
 
-@media (max-width:768px) {
+/* Laptops */
+@media (max-width:1024px) {
     .bgum {
+        top: -100px;
+        right: -80px;
+        width: 35rem;
+        height: 35rem;
+    }
+    .bgdois{
+        left: -80px;
+        bottom:-120px;
         width: 25rem;
         height: 25rem;
+    }
+    .login {
+        height: 450px;
+    }
+}
+
+/* tablets e celulares */
+@media (max-width:768px) {
+    .bgum {
+        width: 27rem;
+        height: 27rem;
     }
     .bgdois{
         width: 20rem;
@@ -80,39 +103,30 @@ body {
         width: 300px;
         height: 390px;
     }
-
 }
 
-@media (max-width:425px) {
+/* celulares menores */
+@media (max-width:480px) {
     .bgum {
         width: 20rem;
         height: 20rem;
     }
     .bgdois{
-        width: 15rem;
-        height: 15rem;
-    }
-    .botao {
-        padding: 3% 40%;
-        font-size: 10pt;
-    } 
-}
-
-@media (max-width: 320px) {
-    .bgum {
         width: 17rem;
         height: 17rem;
     }
-    .bgdois{
-        width: 12rem;
-        height: 12rem;
-    }
+    .botao {
+        padding: 3% 40%;
+    } 
     .login {
-        width: 250px;
-        height: 340px;
         font-size: 12pt;
+        width: 260px;
+        height: 390px;
     }
     .femail, .fsenha {
         width: 12rem;
     }
+    .botao {
+        font-size: 12pt;
+    } 
 }
