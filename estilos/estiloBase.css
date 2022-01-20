@@ -9,8 +9,7 @@
 
 body {
     background: #eecdf5;
-    font-family: 'Open Sans Condensed', sans-serif;
-    height: 100vh;  
+    font-family: 'Open Sans Condensed', sans-serif; 
 }
 
 header {
@@ -47,13 +46,15 @@ header {
 }
 
 footer{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
     font-size: 10pt;
     font-family: calibri, sans-serif;
     text-align: center;
     color: #ffffff;
     background-color: #621172;
 }
-
 
 
 /*media queries*/
@@ -74,9 +75,6 @@ footer{
 
 /* celulares menores */
 @media (max-width: 480px){
-    body, .menu, footer{
-        font-size: 80%;
-    }
     .nome {
         font-size: 2rem;
     }

@@ -12,7 +12,7 @@ h2 { /*Cadastre-se...*/
     border: 1px solid #62117242;
     box-shadow: 1px 1px 3px #000000;
     width: 70%;
-    margin: 1% auto;
+    margin: 2% auto;
 }
 
 .info, .dprincipais {
@@ -23,7 +23,7 @@ h2 { /*Cadastre-se...*/
 }
 
 p {
-    margin: 2.5% 1%;
+    margin: 02% 1%;
     font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ input, select, option {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 2.5% 0;
+    margin: 1% 0;
 }
 
 button {
@@ -73,7 +73,7 @@ button:hover, .voltar:hover {
 /* Laptops */
 @media (max-width:1024px) {
     p {
-        margin: 2% 1%;
+        margin: 1% 1%;
     }
 }
 
@@ -84,6 +84,9 @@ button:hover, .voltar:hover {
     }
     .fcadastro, .info, .dprincipais  {
         flex-direction: column;
+    }
+    .fcadastro {
+        margin: 2% auto 6% auto;
     }
     .fEmail, .fNome {
         width: 14rem;
@@ -99,7 +102,31 @@ button:hover, .voltar:hover {
     .menu {
         display: none;
     }
-    h2 {
-        font-size: 1.2rem;
+    p {
+        padding: 1%;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .botoes {
+        flex-direction: column;
+    }
+    button, .voltar {
+        padding: 8px;
+    }
+
+}
+
+@media (max-width: 395px){
+    p {
+        padding: 1%;
+    }
+    .fcadastro {
+        width: 90%;
+    }
+    .fEmail, .fNome {
+        width: 10rem;
+    }
+
+
 }

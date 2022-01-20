@@ -35,7 +35,14 @@
 @media (max-width:768px) {
     .news {
         flex-direction: column;
+        margin-bottom: 2rem;
     }
+
+    .artigo {
+        margin: 0;
+        padding: 2%;
+    }
+
     .bsaibaMais {
         font-size: 80%;
         padding: 1% 1%;
@@ -44,9 +51,8 @@
 
 /* celulares menores */
 @media (max-width: 480px){
-
     .bsaibaMais {
         font-size: 90%;
-        padding: 1.5% 1.5%;
+        padding: 1.5%;
     }
 }
