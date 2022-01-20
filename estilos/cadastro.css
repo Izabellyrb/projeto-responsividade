@@ -87,6 +87,7 @@ button:hover, .voltar:hover {
     }
     .fcadastro {
         margin: 2% auto 6% auto;
+
     }
     .fEmail, .fNome {
         width: 14rem;
@@ -108,6 +109,18 @@ button:hover, .voltar:hover {
     h2 {
         font-size: 1.5rem;
     }
+    .fNome, .fTel, .fCidade, .fSenha {
+        width: 14rem;
+    }
+    .fTel {
+        width: 13rem;
+    }
+    .fRepsenha  {
+        width: 11rem;
+    }
+
+
+
     .botoes {
         flex-direction: column;
     }
@@ -124,9 +137,5 @@ button:hover, .voltar:hover {
     .fcadastro {
         width: 90%;
     }
-    .fEmail, .fNome {
-        width: 10rem;
-    }
-
 
 }
